@@ -19,9 +19,7 @@ jobs:
             with:
                 # Get all branches and history
                 fetch-depth: 0
-            run: |
-              echo github context: "${{ github.repository }}"
-
+ 
           - name: debug base repo
             env:
               GITHUB_BASE_REPO: ${{ github.repository }}
