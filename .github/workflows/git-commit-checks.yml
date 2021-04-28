@@ -22,9 +22,9 @@ jobs:
 
           - name: debug base repo
             env:
-              JSM: ${{ toJSON }} 
+              JSM: ${{ toJSON(github) }} 
             run: echo github context: "$JSM"
-               
+
           - name: Setup Python
             uses: actions/setup-python@v2
             with:
