@@ -50,6 +50,7 @@ from github import Github
 GOOD = "good"
 BAD  = "bad"
 
+GITHUB_BASE_REPO  = os.environ.get('GITHUB_BASE_REPO')
 GITHUB_WORKSPACE  = os.environ.get('GITHUB_WORKSPACE')
 GITHUB_SHA        = os.environ.get('GITHUB_SHA')
 GITHUB_BASE_REF   = os.environ.get('GITHUB_BASE_REF')
