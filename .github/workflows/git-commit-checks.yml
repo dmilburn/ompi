@@ -15,8 +15,6 @@ jobs:
         runs-on: ubuntu-latest
         env:
           GITHUB_BASE_REPO: ${{ github.repository }}
-        run: |
-          echo github context: "$GITHUB_BASE_REPO"
         steps:
           - name: Check out the code
             uses: actions/checkout@v2
