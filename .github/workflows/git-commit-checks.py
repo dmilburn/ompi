@@ -317,7 +317,7 @@ def load_config():
 #----------------------------------------------------------------------------
 
 def main():
-    print(GITHUB_BASE_REPO)
+    print(f'base repo test: {GITHUB_BASE_REPO})
     config = load_config()
     check_github_pr_description(config)
 
